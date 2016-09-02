@@ -27,10 +27,7 @@ BOARD_KERNEL_PAGESIZE := 4096
 BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x02000000 --tags_offset 0x01e00000
 
 # prebuilt kernel
-# TARGET_PREBUILT_KERNEL := device/huawei/angler/kernel
-# else uncomment below to build from sauce
-TARGET_KERNEL_SOURCE := kernel/huawei/angler
-TARGET_KERNEL_CONFIG := kylo_defconfig
+TARGET_PREBUILT_KERNEL := device/huawei/angler/kernel
 
 BOARD_BOOTIMAGE_PARTITION_SIZE := 41943040
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 41943040
